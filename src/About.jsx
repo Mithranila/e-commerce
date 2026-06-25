@@ -10,7 +10,7 @@ function About() {
 
         <p>
           Welcome to Nila's Nostalgia, where memories find a home.
-          We specialize in retro toys, vintage games, antique décor,
+          We specialize in retro toys, vintage games, antique decor,
           and collectibles that bring timeless moments back to life.
         </p>
 
@@ -18,12 +18,16 @@ function About() {
           Our mission is to preserve beautiful memories and connect
           generations through nostalgic treasures.
         </p>
+
+        <div className="contact">
+          <h2>Contact Us</h2>
+
+          <p>📧 Email: info@nilasnostalgia.com</p>
+          <p>📞 Phone: +91 98765 43210</p>
+        </div>
       </div>
 
-      <footer>
-        <h3>Contact Us</h3>
-        <p>Email : info@nilasnostalgia.com</p>
-        <p>Phone : +91 98765 43210</p>
+      <footer className="footer">
         <p>© 2026 Nila's Nostalgia. All Rights Reserved.</p>
       </footer>
     </>

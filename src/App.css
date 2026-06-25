@@ -6,13 +6,13 @@
 
 body{
   font-family: 'Georgia', serif;
-  background:#f7f4ee;
+  background:#FDF0D5;
 }
 
 /* Navbar */
 
 .navbar{
-  background:#1f3447;
+  background:#003049;
   color:white;
   display:flex;
   justify-content:space-between;
@@ -33,7 +33,7 @@ body{
 }
 
 .navbar a:hover{
-  color:#f4d03f;
+  color:yellow;
 }
 
 /* Hero */
@@ -44,35 +44,42 @@ body{
 }
 
 .hero h1{
-  font-size:70px;
+  font-size:55px;
   color:#223548;
   margin-bottom:20px;
 }
 
 .hero p{
-  font-size:24px;
+  font-size:20px;
   color:#666;
   max-width:800px;
   margin:auto;
   line-height:1.5;
 }
+/* Cards Container */
+
 .cards{
   display:grid;
-  grid-template-columns:repeat(3, 280px);
-  justify-content:center;
-  gap:30px;
-  margin-top:60px;
+  grid-template-columns:repeat(4, 1fr);
+  gap:25px;
+  max-width:1400px;
+  margin:60px auto;
+  padding:0 20px;
 }
 
-/* Cards */
+/* Card */
 
 .card{
-  width:280px;
   background:white;
   border-radius:15px;
   overflow:hidden;
-  box-shadow:0 5px 15px rgba(0,0,0,.1);
-  transition:.4s;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+  text-align:center;
+}
+
+.card:hover{
+  transform:translateY(-8px);
 }
 
 .card-img{
@@ -82,13 +89,134 @@ body{
 }
 
 .card h2{
-  margin:15px 0 10px;
+  font-size:24px;
+  margin:15px 10px 10px;
+  color:#223548;
 }
 
 .card p{
   padding:0 15px 20px;
+  color:#666;
+  line-height:1.5;
+  font-size:16px;
+}
+/* About Section */
+
+.about{
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 50px;
+  background: bisque;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
-.card:hover{
-  transform:translateY(-10px);
+.about h1{
+  font-size: 3rem;
+  color: #0b3954;
+  margin-bottom: 25px;
+}
+
+.about p{
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Contact Section */
+
+.contact{
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 2px solid ;
+}
+
+.contact h2{
+  color: #0b3954;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.contact p{
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #444;
+}
+
+/* Footer */
+
+.footer{
+  background: #0b3954;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: auto;
+}
+footer h3{
+  margin-bottom:15px;
+}
+
+.footer p{
+  margin: 0;
+  font-size: 1rem;
+}
+/* About Section */
+
+.about{
+  max-width:1000px;
+  margin:60px auto;
+  padding:50px;
+  backgroun:#FDF0D5;
+  border-radius:20px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.1);
+  text-align:center;
+}
+
+.about h1{
+  font-size:48px;
+  color:#003049;
+  margin-bottom:25px;
+}
+
+.about p{
+  font-size:20px;
+  color:#555;
+  line-height:1.8;
+  margin-bottom:20px;
+}
+
+/* Contact */
+
+.contact{
+  margin-top:40px;
+  padding-top:30px;
+  background:bisque;
+  border-top:2px solid ;
+}
+
+.contact h2{
+  font-size:32px;
+  color:#264653;
+  margin-bottom:20px;
+}
+
+.contact p{
+  font-size:18px;
+  color:#444;
+}
+
+/* Footer */
+
+.footer{
+  background:#003049;
+  color:white;
+  text-align:center;
+  padding:25px;
+  margin-top:50px;
+}
+
+.footer p{
+  margin:0;
 }
